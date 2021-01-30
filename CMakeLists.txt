@@ -105,7 +105,9 @@ target_compile_options(hyde PUBLIC -Wall -Werror -Wno-range-loop-analysis -DHYDE
 target_link_libraries(hyde
                       ${Boost_FILESYSTEM_LIBRARY}
                       ${Boost_SYSTEM_LIBRARY}
-                      clangASTMatchers
-                      clangBasic
-                      clangTooling
+#                      clangASTMatchers
+#                      clangBasic
+#                      clangTooling
+                      clang-cpp
+                      LLVM
                       )
